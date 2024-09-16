@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+  }
+  /* scrollbar */
+  html ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html ::-webkit-scrollbar-thumb {
+    background: #b2744c;
+    border-radius: 10px;
+  }
+  
+  html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* return to top arrow */
+  .arrow {
+    position: fixed;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+
+/* navbar */
+#navbar {
+    background-color: #b2744c;
+  }
+  
+  #logo img {
+    border-radius: 10px;
+    width: 160px;
+    margin-left: 40px;
+  }
+  
+  .navbar-nav {
+    margin-left: 50px;
+  }
+  
+  .nav-item .nav-link {
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .nav-item .nav-link:hover {
+    background: #f7f5f2;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  #navbar form button {
+    background: black;
+    color: white;
+    border: 1px solid white;
+  }
+
+  /* carousel */
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .carousel-caption h5 {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    transition: transform .2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
