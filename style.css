@@ -68,8 +68,8 @@
 
   /* carousel */
 .carousel-item img {
-    height: 90vh;
-    object-fit: cover;
+    height: 200px;
+    width: 500px;
   }
   
   .carousel-caption {
@@ -261,7 +261,7 @@
       margin-right: auto;
     }
   
-    .serives-grid {
+    .services-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   
