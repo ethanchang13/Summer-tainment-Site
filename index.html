@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>title</title>
+        <title>Japan Vacation</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -15,6 +16,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/tmf0uac.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -26,223 +30,399 @@
     </head>
 
     <body>
-
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg" id="navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#" id="logo"><img src="logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#menu">Menu</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#product">Product</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#gallery">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#blogs">Blogs</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
+    <canvas></canvas>
+      <script src="script.js"></script>
         <header>
-            <!-- place navbar here -->
+            <!-- navbar (https://www.sliderrevolution.com/resources/css-menu/) -->
+            <nav class="links" style="--items: 7;">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#schedule">Schedule</a>              
+              <a href="#hotels">Hotels</a>              
+              <a href="#restaurants">Restaurants</a>
+              <a href="#sightseeing">Sightseeing</a>
+              <a href="#Review">Review</a>
+              <span class="line"></span>
+            </nav>
         </header>
 
-        <!-- carousel for Japan images -->
-        <section class="about" id="about">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="imgs/Asakusa.jpg"
-                    class="d-block w-100" alt="Asakusa">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Taipei 101</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img src="imgs/Tokyo Skytree.jpg"
-                    class="d-block w-100" alt="Tokyo Skytree">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Toroko National Park</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Alishan">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Alishan</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Sun Moon Lake">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Sun Moon Lake</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Tawian Temples">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Traditional Temple</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img src=""
-                    class="d-block w-100" alt="Taiwan Night Market">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Night Market</h5>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <!-- hero section -->
+
+        <main class="hero-section" id="home">
+
+      <!-- background -->
+      <div class="background">
+        <img src="imgs/japan.jpeg" class="background-image" alt="hero-section-image">
+      </div>
+
+
+    </div>
+      <div class="hero-section-content">
+        <h1 class="hero-section-title">Japan</h1>
+        <p class="hero-section-sub-heading">A timeless fusion of tradition and innovation, where stunning landscapes meet vibrant cities and a rich cultural tapestry.</p>
+      </div>
+
+    </main>
+  </header>    
+</section>
+
+    <!-- carousel for Taiwan images -->
+    <section class="about" id="about">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://www.myglobalviewpoint.com/wp-content/uploads/2023/09/Most-Beautiful-Places-in-Taiwan-featured.jpg"
+              class="d-block w-100" alt="Taiwan City">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Taipei 101</h5>
+              <p></p>
             </div>
-            </section>
-        
-        <main>
-          <!-- section for hotels -->
-          <div class="container text-center mt-4" id="hotels">
-            <h1 style="color: white;">Featured Hotels</h1><br>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/70133866.jpg?k=4d8f4471bba0c0ee972b845ea4972065a4fcd84ae487224363e2730eabd07e74&o=&hp=1"
-                    class="card-img-top" alt="Grand Hotel Taipei">
-                  <div class="card-body">
-                    <h5 class="card-title">Grand Hotel Taipei</h5>
-                    <p class="card-text">Taipei Grand Hotel, a 14-story palace-like building has been standing midway up
-                      Yuanshan since 1952, a towering building with red columns, gilded tiles and a magnificent, grandiose,
-                      regal, classic presence, a must-visit great gem of Chinese culture.</p>
-                    <a href="https://www.grand-hotel.org/EN/official/main.aspx" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/4d/a7/c2/caption.jpg?w=700&h=-1&s=1"
-                    class="card-img-top" alt="Fleur de Chine Hotel">
-                  <div class="card-body">
-                    <h5 class="card-title">Fleur de Chine Hotel</h5>
-                    <p class="card-text">Fleur de Chine Hotel is situated at the north peninsula of the Sun Moon Lake, with a
-                      distinctive style in its building structure, creating an aesthetic atmosphere with the integration of
-                      nature and simplicity with the surroundings.</p>
-                    <a href="https://www.fleurdechinehotel.com/en/index.php" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/364541577.jpg?k=a78d57833341f1da29bfc9f6f8536189f8101c254c3b01bbef98c959d42bdfbb&o=&hp=1"
-                    class="card-img-top" alt="Grand Hi-Lai Hotel">
-                  <div class="card-body">
-                    <h5 class="card-title">Grand Hi-Lai Hotel</h5>
-                    <p class="card-text">The Grand Hi-Lai Hotel is a towering landmark in Kaohsiung's business district,
-                      offering vast city views. The hotel's elegant appearance, luxurious interior, and attentive service
-                      provide an remarkable experience for guests during their stay.</p>
-                    <a href="https://www.grand-hilai.com/en/" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
+          </div>
+          <div class=" carousel-item">
+            <img src="https://www.hotelscombined.com.tw/news/wp-content/uploads/sites/316/2019/08/Feature-1.jpg"
+              class="d-block w-100" alt="Toroko National Park">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Toroko National Park</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_3000,h_2250,f_auto/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/erbgho8unczaetu1fdjf/Chiayi:AlishanDayTourMulti-DayTour-KlookHongKong.jpg"
+              class="d-block w-100" alt="Alishan">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Alishan</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="https://i0.wp.com/flysonice30.com/wp-content/uploads/2023/10/%E7%B8%AE%E5%9C%96P1160797-2.jpg?fit=1024%2C683&ssl=1"
+              class="d-block w-100" alt="Sun Moon Lake">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sun Moon Lake</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="https://cdn.cnn.com/cnnnext/dam/assets/170606121356-taiwan---travel-destination---shutterstock-550368736.jpg"
+              class="d-block w-100" alt="Tawian Temples">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Traditional Temple</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img src="https://ik.imagekit.io/tvlk/blog/2018/08/Taipei-Raohe-Night-Market-203483605.jpg"
+              class="d-block w-100" alt="Taiwan Night Market">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Night Market</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div><br><br><br><br><br>
+
+      <!-- services grid -->
+      <h1 style="color: white; text-align: center;">Fun Facts</h1>
+      <div class="serives-grid">
+        <div class="service-card">
+          <div class="circle"></div>
+          <i class="fa-solid fa-building card-icon"></i>
+          <p class="service-text">Once the tallest building in the world, Taipei 101 is an iconic skyscraper in Taipei
+            that offers stunning views of the city and surrounding mountains from its observatory.</p>
+        </div>
+        <div class="service-card">
+          <div class="circle"></div>
+          <i class="fa-solid fa-mug-hot card-icon"></i>
+          <p class="service-text">Taiwan is famous for its tea, particularly high-mountain oolong tea. The island's tea
+            culture dates back centuries and has had a significant influence on tea-drinking traditions around the
+            world.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="circle"></div>
+          <i class="fa-solid fa-utensils card-icon"></i>
+          <p class="service-text">Taiwan is known as a food paradise, with a wide variety of delicious street food and
+            night markets offering everything from stinky tofu to bubble tea.</p>
+        </div>
+        <div class="service-card">
+          <div class="circle"></div>
+          <i class="fa-solid fa-mountain card-icon"></i>
+          <p class="service-text">Despite its small size, Taiwan boasts diverse landscapes, including lush mountains,
+            stunning beaches, and dramatic gorges.</p>
+        </div>
+      </div>
+
+      <div class="bg-circle"></div>
+
+      <br><br>
+
+      <!-- fun facts -->
+      <div class="container mt-5">
+        <div class="accordion" id="funFactsAccordion">
+          <!-- fun fact 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="Funfact1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Bubble Tea Origin
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="funFact1"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Bubble tea, also known as pearl milk tea, originated in Taiwan in the 1980s. It has since become a
+                popular beverage worldwide, known for its chewy tapioca pearls.
               </div>
             </div>
           </div>
-          
-          <div class="container text-center mt-4" id="restaurants">
-            <h1 style="color: white;">Top Restaurants</h1><br>
-            <div class="row">
-              <!-- restaurants go here -->
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://www.theworlds50best.com/discovery/filestore/jpg/Din%20Tai%20Fung-photo.jpg"
-                    class="card-img-top" alt="Din Tai Fung">
-                  <div class="card-body">
-                    <h5 class="card-title">Din Tai Fung</h5>
-                    <p class="card-text">Din Tai Fung is a renowned restaurant in Taiwan, famous for its signature soup
-                      dumplings and exquisite Taiwanese cuisine. With a commitment to quality and meticulous attention to
-                      detail, Din Tai Fung has garnered international praise for its delectable dishes.</p>
-                    <a href="https://www.dintaifung.com.tw/eng/index.php" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://lh3.googleusercontent.com/p/AF1QipP109GaXyYPsS01UOzO-NGZvrxbufsp2TC3T73-=s680-w680-h510"
-                    class="card-img-top" alt="Wulao Hot Pot">
-                  <div class="card-body">
-                    <h5 class="card-title">Wulao Hot Pot</h5>
-                    <p class="card-text">
-                      Wulao Hot Pot is a popular restaurant in Taiwan where guests can choose from a variety of fresh
-                      ingredients and cook them in a flavorful broth at their table. With a focus on quality and taste, Wulao
-                      Hot Pot offers a delicious and communal dining experience for locals and visitors alike.</p>
-                    <a href="https://www.wulao.com.tw/" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://s.yimg.com/ny/api/res/1.2/vnqleW_kwudyy.H2r9XOJQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/vi/cosmopolitan.tw/53c6ae89ba3c39150c031fd46f0d80bb">
-                  <div class="card-body">
-                    <h5 class="card-title">Xuji Sunrise</h5>
-                    <p class="card-text">Xuji Sunrise is a charming restaurant nestled in the heart of Taiwan, known for its
-                      picturesque sunrise views and delectable local cuisine. The restaurant's menu features a variety of
-                      fresh seafood dishes and traditional Taiwanese fare, all prepared with care and attention to detail.
-                    </p>
-                    <a href="https://www.xujisunrise.com.tw/zh-TW/home" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
+
+          <!-- fun fact 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                Night Markets
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="funFact2"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Taiwan is famous for its vibrant night markets, offering a wide variety of street food, snacks,
+                clothing, and games. These markets are a popular destination for both locals and tourists.
               </div>
             </div>
+          </div>
 
+          <!-- fun fact 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                Hot Springs
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="funFact3"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Taiwan is home to numerous natural hot springs, known for their therapeutic properties. Some of the most
+                popular hot spring destinations include Beitou in Taipei and Wulai in New Taipei City.
+              </div>
+            </div>
+          </div>
 
-            <!-- section for attractions -->
+          <!-- fun fact 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                Cuisine
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="funFact4"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Taiwanese cuisine is diverse and influenced by various cultures, including Chinese, Japanese, and
+                indigenous Taiwanese. Some popular dishes include beef noodle soup, stinky tofu, and oyster omelets.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                Technology Hub
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="funFact5"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Taiwan is known for its technology industry, particularly its semiconductor and computer hardware
+                manufacturing. Companies like TSMC, Asus, and Acer are based in Taiwan.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                Cycling Paradise
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="funFact6"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Taiwan is often referred to as a cycling paradise due to its extensive network of cycling paths and
+                routes. The island offers a range of cycling experiences, from scenic coastal rides to challenging
+                mountain climbs.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                Taiwanese Education
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="funFact7"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                It has also been reported that Taiwanese students spend more hours at school than any others in the
+                world, with an average of 9.5 hours at school. And this is not even counting the many additional hours
+                they spend at cram schools, tutoring sessions, and other classes.
+              </div>
+            </div>
+          </div>
+
+          <!-- add more fun facts here -->
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="schedule">
+      <h1>5-Day Tokyo Itinerary Overview</h1>
+      <ul class="itinerary-list">
+          <li>Day 1: Shinjuku, Meiji Shrine, Harajuku, Shibuya</li>
+          <li>Day 2: Ueno, Kitchen Street, Asakusa, Tokyo Skytree</li>
+          <li>Day 3: Japanese Gardens, Imperial Palace, Ginza, Akihabara</li>
+          <li>Day 4: Toyosu or Tsukiji Fish Market, Odaiba, TeamLab Planets, Tokyo Tower</li>
+          <li style="list-style: none;">Day 5:</li>
+          <ul class="options">
+              <li>Option 1: Chic boutiques and cafes in Nakameguro, Daikanyama, and Ebisu</li>
+              <li>Option 2: Upscale art & architecture in Aoyama, Omotesando, Azabudai Hills, and art museums</li>
+              <li>Option 3: Day trip to Hakone & Mt. Fuji</li>
+          </ul>
+      </ul>
+  </div>
+
+    <!-- section for hotels -->
+    <div class="container text-center mt-4" id="hotels">
+      <h1 style="color: white;">Featured Hotels</h1><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="imgs/amantokyo.webp"
+              class="card-img-top" alt="Aman Tokyo">
+            <div class="card-body">
+              <h5 class="card-title">Aman Tokyo</h5>
+              <p class="card-text">Taipei Grand Hotel, a 14-story palace-like building has been standing midway up
+                Yuanshan since 1952, a towering building with red columns, gilded tiles and a magnificent, grandiose,
+                regal, classic presence, a must-visit great gem of Chinese culture.</p>
+              <a href="https://www.aman.com/hotels/aman-tokyo" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/fourseasonshotel.webp"
+              class="card-img-top" alt="Four Seasons Hotel">
+            <div class="card-body">
+              <h5 class="card-title">Four Seasons Hotel</h5>
+              <p class="card-text">Fleur de Chine Hotel is situated at the north peninsula of the Sun Moon Lake, with a
+                distinctive style in its building structure, creating an aesthetic atmosphere with the integration of
+                nature and simplicity with the surroundings.</p>
+              <a href="https://www.fourseasons.com/tokyo/" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="imgs/asaba.webp"
+              class="card-img-top" alt="Asaba Hotel">
+            <div class="card-body">
+              <h5 class="card-title">Asaba</h5>
+              <p class="card-text">The Grand Hi-Lai Hotel is a towering landmark in Kaohsiung's business district,
+                offering vast city views. The hotel's elegant appearance, luxurious interior, and attentive service
+                provide an remarkable experience for guests during their stay.</p>
+              <a href="https://www.asaba-ryokan.com/" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section for restaurants -->
+    <div class="container text-center mt-4" id="restaurants">
+      <h1 style="color: white;">Top Restaurants</h1><br>
+      <div class="row">
+        <!-- restaurants go here -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/ichiranramen.jpg"
+              class="card-img-top" alt="Ichiran Ramen">
+            <div class="card-body">
+              <h5 class="card-title">Ichiran Ramen</h5>
+              <p class="card-text">Din Tai Fung is a renowned restaurant in Taiwan, famous for its signature soup
+                dumplings and exquisite Taiwanese cuisine. With a commitment to quality and meticulous attention to
+                detail, Din Tai Fung has garnered international praise for its delectable dishes.</p>
+              <a href="https://en.ichiran.com/ramen/" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/kurasushi.jpg"
+              class="card-img-top" alt="Kura Sushi">
+            <div class="card-body">
+              <h5 class="card-title">Kura Sushi</h5>
+              <p class="card-text">
+                Wulao Hot Pot is a popular restaurant in Taiwan where guests can choose from a variety of fresh
+                ingredients and cook them in a flavorful broth at their table. With a focus on quality and taste, Wulao
+                Hot Pot offers a delicious and communal dining experience for locals and visitors alike.</p>
+              <a href="https://www.kurasushi.co.jp/en/" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://s.yimg.com/ny/api/res/1.2/vnqleW_kwudyy.H2r9XOJQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/vi/cosmopolitan.tw/53c6ae89ba3c39150c031fd46f0d80bb">
+            <div class="card-body">
+              <h5 class="card-title">Xuji Sunrise</h5>
+              <p class="card-text">Xuji Sunrise is a charming restaurant nestled in the heart of Taiwan, known for its
+                picturesque sunrise views and delectable local cuisine. The restaurant's menu features a variety of
+                fresh seafood dishes and traditional Taiwanese fare, all prepared with care and attention to detail.
+              </p>
+              <a href="https://www.xujisunrise.com.tw/zh-TW/home" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+
+      <!-- section for attractions -->
       <div class="container text-center mt-4">
         <!-- attractions goes here -->
         <section class="explore-section" id="attractions">
           <h1 class="section-title">Go Sightseeing</h1>
           <p class="section-para">_____</p>
 
-        <div class="tours-container"></div>
+          <!-- grid -->
+
+          <div class="tours-container">
             <div class="tour-card">
               <img
                 src="https://media.cnn.com/api/v1/images/stellar/prod/180719144337-beautiful-taiwan-anping-green-tunnel-z-new-popu1965.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618"
@@ -309,12 +489,43 @@
           </div>
         </section>
       </div>
-    </div>
-        </main>
+    </div><br><br><br>
 
-        <footer>
-            <!-- place footer here -->
-        </footer>
+    <!-- location -->
+    <section class="location" id="location">
+      <h1 style="color: white; text-align: center;">Location</h1><br>
+      <div style="display: flex; justify-content: center;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747756.8633807222!2d116.85213303981843!3d23.46339286558347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2sus!4v1711604350608!5m2!1sen!2sus"
+          width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section><br><br><br>
+
+
+    <!-- contact section -->
+    <section class="book-section" id="booknow">
+      <div class="book-content">
+        <h1 class="book-now-title">Book your travel today</h1>
+        <p class="book-now-text">Give yourself and your family a peaceful and wonderful vacation this holiday!</p>
+
+        <a href="https://www.evaair.com/en-us/index.html" target="_blank" class="book-now-link">
+          <button class="book-now">book now</button>
+        </a>
+      </div>
+      <div class="bg-circle-2"></div>
+      <img src="img/book.png" class="book-now-img" alt="bookflight">
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <img src="img/logo.png" class="footer-logo" alt="logo">
+      <div class="footer-text">
+        <p>Travel the world, on this holiday</p>
+        <p>Email - 526ssridar@frhsd.com</p>
+        <p>Phone - (732) 285-3577</p>
+      </div>
+    </footer>
         
         <!-- return to top arrow-->
         <div class="container">
