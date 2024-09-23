@@ -5,6 +5,13 @@
   font-family: 'Merriweather', serif;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #161813;
+  overflow-x: hidden;
+  margin: 0;
+}
+
 :root {
   --gradient-top: linear-gradient(0deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.22) 36.98%, rgba(22, 24, 19, 0.47) 70.83%, rgba(22, 24, 19, 0.76) 100%);
   --gradient-bottom: linear-gradient(180deg, rgba(22, 24, 19, 0) 0%, rgba(22, 24, 19, 0.42) 21.88%, rgba(22, 24, 19, 0.69) 41.67%, rgba(22, 24, 19, 0.9) 61.98%, rgba(22, 24, 19, 0.99) 78.12%, #161813 100%);
@@ -29,17 +36,19 @@ canvas {
   padding: 20px; 
 }
 
+/* header */
 header {
   position: relative; 
   z-index: 2; 
 }
 
+/* scrollbar */
 html ::-webkit-scrollbar-track {
   background: transparent;
 }
 
 html ::-webkit-scrollbar-thumb {
-  background: #b2744c;
+  background: #f0c0c0;
   border-radius: 10px;
 }
 
@@ -51,6 +60,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* arrow */
 .arrow {
   position: fixed;
   height: 50px;
@@ -60,20 +70,7 @@ html {
   line-height: 50px;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #161813;
-  overflow-x: hidden;
-  margin: 0;
-}
-
-.hero-section-title {
-  font-family: "trade-gothic-next", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-/* navbar */
+/* navbar (https://www.sliderrevolution.com/resources/css-menu/) */
 code {
   background: #fff1;
   font-family: 'Inconsolata', monospace;
@@ -198,6 +195,12 @@ code {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
+.hero-section-title {
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 .hero-section-content {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
   padding: 20px;
@@ -210,6 +213,51 @@ code {
   color: #fff;
 }
 
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-section-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero-section-sub-heading {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+.scroll-down-icon {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  animation: down ease 1s infinite;
+}
+
+@keyframes down {
+  from {
+    bottom: 10%
+  }
+
+  to {
+    bottom: 8%
+  }
+}
+
+/* divider */
 .fade-divider {
   height: 50px;
   background: linear-gradient(to bottom, #161813, transparent);
@@ -262,54 +310,7 @@ code {
   object-fit: cover;
 }
 
-/* hero section */
-
-.hero-section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-}
-
-.hero-section-title {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300;
-  font-size: 80px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.hero-section-sub-heading {
-  text-align: center;
-  text-transform: capitalize;
-  margin: 20px 0;
-  font-size: 20px;
-}
-
-.scroll-down-icon {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  animation: down ease 1s infinite;
-}
-
-@keyframes down {
-  from {
-    bottom: 10%
-  }
-
-  to {
-    bottom: 8%
-  }
-}
-
 /* background part */
-
 .background {
   position: absolute;
   top: 0;
@@ -350,7 +351,6 @@ code {
 }
 
 /* fun facts accordion */
-
 .accordion-item {
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -393,6 +393,7 @@ code {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* list */
 .listcontainer {
   max-width: 800px;
   margin: auto;
@@ -401,11 +402,13 @@ code {
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 h1 {
   text-align: center;
-  color: #8a2b2b; /* A traditional Japanese color */
+  color: #8a2b2b;
   font-size: 2.5em;
 }
 
@@ -440,8 +443,8 @@ h1 {
       font-size: 1em;
   }
 }
-/* travel grid */
 
+/* travel grid */
 .travel-grid {
   width: 100%;
   columns: 3;
@@ -468,7 +471,6 @@ h1 {
 }
 
 /* explore section */
-
 .explore-section {
   position: relative;
   width: 100%;
@@ -567,7 +569,6 @@ h1 {
 }
 
 /* iframe hover effect */
-
 .location iframe:hover {
   border-color: #007bff;
   box-shadow: 0 0 20px 5px rgba(0, 123, 255, 0.5);
@@ -577,7 +578,7 @@ h1 {
 .footer {
   width: 100%;
   padding: 100px 10vw;
-  background: #000;
+  background: #3f3232;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -612,7 +613,6 @@ h1 {
 }
 
 /* tab view */
-
 @media screen and (max-width: 1460px) {
   .link-item {
     margin: 0 10px;
@@ -652,7 +652,6 @@ h1 {
 }
 
 /* much smaller device */
-
 @media screen and (max-width:798px) {
   .navbar {
     height: auto;
@@ -720,4 +719,8 @@ h1 {
   .travel-grid {
     columns: 1;
   }
+}
+
+#hotels {
+  margin-bottom: 100px;
 }
