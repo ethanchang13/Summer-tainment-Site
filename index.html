@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>title</title>
+        <title>Japan Vacation</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -15,6 +16,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/tmf0uac.css">
 
         <!-- Bootstrap CSS v5.2.1 -->
         <link
@@ -24,283 +28,400 @@
             crossorigin="anonymous"
         />
     </head>
-
     <body>
-
+      <canvas></canvas>
+      <script src="script.js"></script>
         <header>
-            <!-- navbar -->
-        <nav class="navbar navbar-expand-lg" id="navbar">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#" id="logo"><img src="logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#product">Product</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#gallery">Gallery</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#blogs">Blogs</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+            <!-- navbar (https://www.sliderrevolution.com/resources/css-menu/) -->
+            <nav class="links" style="--items: 7;">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#schedule">Schedule</a>              
+              <a href="#hotels">Hotels</a>              
+              <a href="#restaurants">Restaurants</a>
+              <a href="#sightseeing">Sightseeing</a>
+              <a href="#location">Location</a>
+              <span class="line"></span>
+            </nav>
         </header>
 
-        <!-- carousel for Japan images -->
-        <section class="about" id="about">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="imgs/Asakusa.jpg"
-                    class="d-block w-100" alt="Asakusa">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Taipei 101</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img src="imgs/Tokyo Skytree.jpg"
-                    class="d-block w-100" alt="Tokyo Skytree">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Toroko National Park</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Alishan">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Alishan</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Sun Moon Lake">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Sun Moon Lake</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img
-                    src=""
-                    class="d-block w-100" alt="Tawian Temples">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Traditional Temple</h5>
-                    <p></p>
-                  </div>
-                </div>
-                <div class=" carousel-item">
-                  <img src=""
-                    class="d-block w-100" alt="Taiwan Night Market">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Night Market</h5>
-                    <p></p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+        <!-- hero section -->
+        <main class="hero-section" id="home">
+
+      <!-- background -->
+      <div class="background">
+        <img src="imgs/japan.jpeg" class="background-image" alt="hero-section-image">
+      </div>
+
+
+    </div>
+      <div class="hero-section-content">
+        <h1 class="hero-section-title">Japan</h1>
+        <p class="hero-section-sub-heading">A timeless fusion of tradition and innovation, where stunning landscapes meet vibrant cities and a rich cultural tapestry.</p>
+      </div>
+
+    </main>
+  </header>    
+</section>
+
+<div class="fade-divider"></div>
+
+    <!-- carousel for Japan images -->
+    <section class="about" id="about">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="imgs/Asakusa.jpg"
+              class="d-block w-100" alt="Asakusa">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Asakusa</h5>
+              <p></p>
             </div>
-            </section>
-        
-        <main>
-          <!-- section for hotels -->
-          <div class="container text-center mt-4" id="hotels">
-            <h1 style="color: white;">Featured Hotels</h1><br>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/70133866.jpg?k=4d8f4471bba0c0ee972b845ea4972065a4fcd84ae487224363e2730eabd07e74&o=&hp=1"
-                    class="card-img-top" alt="Grand Hotel Taipei">
-                  <div class="card-body">
-                    <h5 class="card-title">Grand Hotel Taipei</h5>
-                    <p class="card-text">Taipei Grand Hotel, a 14-story palace-like building has been standing midway up
-                      Yuanshan since 1952, a towering building with red columns, gilded tiles and a magnificent, grandiose,
-                      regal, classic presence, a must-visit great gem of Chinese culture.</p>
-                    <a href="https://www.grand-hotel.org/EN/official/main.aspx" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/4d/a7/c2/caption.jpg?w=700&h=-1&s=1"
-                    class="card-img-top" alt="Fleur de Chine Hotel">
-                  <div class="card-body">
-                    <h5 class="card-title">Fleur de Chine Hotel</h5>
-                    <p class="card-text">Fleur de Chine Hotel is situated at the north peninsula of the Sun Moon Lake, with a
-                      distinctive style in its building structure, creating an aesthetic atmosphere with the integration of
-                      nature and simplicity with the surroundings.</p>
-                    <a href="https://www.fleurdechinehotel.com/en/index.php" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/364541577.jpg?k=a78d57833341f1da29bfc9f6f8536189f8101c254c3b01bbef98c959d42bdfbb&o=&hp=1"
-                    class="card-img-top" alt="Grand Hi-Lai Hotel">
-                  <div class="card-body">
-                    <h5 class="card-title">Grand Hi-Lai Hotel</h5>
-                    <p class="card-text">The Grand Hi-Lai Hotel is a towering landmark in Kaohsiung's business district,
-                      offering vast city views. The hotel's elegant appearance, luxurious interior, and attentive service
-                      provide an remarkable experience for guests during their stay.</p>
-                    <a href="https://www.grand-hilai.com/en/" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
+          </div>
+          <div class=" carousel-item">
+            <img src="imgs/akihabara.webp"
+              class="d-block w-100" alt="Akihabara">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Akihabara</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="imgs/shibuyacrossing.jpeg"
+              class="d-block w-100" alt="Shibuya Crossing">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shibuya Crossing</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="imgs/shibuyasky.webp"
+              class="d-block w-100" alt="Shibuya Sky">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Shibuya Sky</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img
+              src="imgs/mountfuji.jpg"
+              class="d-block w-100" alt="Mount Fuji">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mount Fuji</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class=" carousel-item">
+            <img src="imgs/jishushrine.jpg"
+              class="d-block w-100" alt="Jishu Shrine">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Jishu Shrine</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- fun facts -->
+      <div class="container mt-5">
+        <div class="accordion" id="funFactsAccordion">
+          <!-- fun fact 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="Funfact1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                Sushi Origin
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="funFact1"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Sushi, one of Japan's most iconic dishes, originally began as a way to preserve fish. It was stored in fermented rice, but over time, the rice began to be eaten with the fish, evolving into the fresh sushi we know today.
               </div>
             </div>
           </div>
-          
-          <div class="container text-center mt-4" id="restaurants">
-            <h1 style="color: white;">Top Restaurants</h1><br>
-            <div class="row">
-              <!-- restaurants go here -->
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://www.theworlds50best.com/discovery/filestore/jpg/Din%20Tai%20Fung-photo.jpg"
-                    class="card-img-top" alt="Din Tai Fung">
-                  <div class="card-body">
-                    <h5 class="card-title">Din Tai Fung</h5>
-                    <p class="card-text">Din Tai Fung is a renowned restaurant in Taiwan, famous for its signature soup
-                      dumplings and exquisite Taiwanese cuisine. With a commitment to quality and meticulous attention to
-                      detail, Din Tai Fung has garnered international praise for its delectable dishes.</p>
-                    <a href="https://www.dintaifung.com.tw/eng/index.php" target="_blank" class="btn btn-primary">Learn
-                      More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img src="https://lh3.googleusercontent.com/p/AF1QipP109GaXyYPsS01UOzO-NGZvrxbufsp2TC3T73-=s680-w680-h510"
-                    class="card-img-top" alt="Wulao Hot Pot">
-                  <div class="card-body">
-                    <h5 class="card-title">Wulao Hot Pot</h5>
-                    <p class="card-text">
-                      Wulao Hot Pot is a popular restaurant in Taiwan where guests can choose from a variety of fresh
-                      ingredients and cook them in a flavorful broth at their table. With a focus on quality and taste, Wulao
-                      Hot Pot offers a delicious and communal dining experience for locals and visitors alike.</p>
-                    <a href="https://www.wulao.com.tw/" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="https://s.yimg.com/ny/api/res/1.2/vnqleW_kwudyy.H2r9XOJQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/vi/cosmopolitan.tw/53c6ae89ba3c39150c031fd46f0d80bb">
-                  <div class="card-body">
-                    <h5 class="card-title">Xuji Sunrise</h5>
-                    <p class="card-text">Xuji Sunrise is a charming restaurant nestled in the heart of Taiwan, known for its
-                      picturesque sunrise views and delectable local cuisine. The restaurant's menu features a variety of
-                      fresh seafood dishes and traditional Taiwanese fare, all prepared with care and attention to detail.
-                    </p>
-                    <a href="https://www.xujisunrise.com.tw/zh-TW/home" target="_blank" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
+
+          <!-- fun fact 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                Kimono Culture
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="funFact2"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                The kimono, Japan’s traditional garment, has intricate designs and is worn for special occasions like weddings and festivals. Its style and colors often reflect the season and the wearer's age or marital status.
               </div>
             </div>
+          </div>
 
+          <!-- fun fact 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                Vending Machines
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="funFact3"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Japan has over 5 million vending machines, offering everything from snacks and drinks to hot meals, umbrellas, and even fresh eggs, making them an integral part of daily life.
+              </div>
+            </div>
+          </div>
 
-            <!-- section for attractions -->
+          <!-- fun fact 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                Tatami Mats
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="funFact4"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Traditional Japanese homes and buildings have floors made of tatami, a mat made from rice straw. These are used in various spaces, including tea rooms and ryokans, and provide a soft, natural feel to the environment.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact5">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                Wooden Castles
+              </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="funFact5"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Many of Japan’s historical castles, such as Himeji Castle, were built primarily from wood. Their elegant, multi-tiered structures blend beauty with defense, often surrounded by moats and stone walls.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact6">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
+                Tea Ceremony
+              </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="funFact6"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                The Japanese tea ceremony, known as chanoyu or sado, is a deeply spiritual and artistic ritual involving the preparation and presentation of matcha tea. It emphasizes harmony, respect, purity, and tranquility.
+              </div>
+            </div>
+          </div>
+
+          <!-- fun fact 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="funFact7">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse7" aria-expanded="true" aria-controls="collapse7">
+                Mochi
+              </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="funFact7"
+              data-bs-parent="#funFactsAccordion">
+              <div class="accordion-body">
+                Mochi, a chewy rice cake, is a traditional food enjoyed during festivals like New Year’s. The pounding of rice to make mochi, called mochitsuki, is a communal activity symbolizing good fortune for the year ahead.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- list -->
+    <div class="listcontainer" id="schedule">
+      <h1>5-Day Tokyo Itinerary Overview</h1>
+      <ul class="itinerary-list">
+          <li>Day 1: Shinjuku, Meiji Shrine, Harajuku, Shibuya</li>
+          <li>Day 2: Ueno, Kitchen Street, Asakusa, Tokyo Skytree</li>
+          <li>Day 3: Japanese Gardens, Imperial Palace, Ginza, Akihabara</li>
+          <li>Day 4: Toyosu or Tsukiji Fish Market, Odaiba, TeamLab Planets, Tokyo Tower</li>
+          <li style="list-style: none;">Day 5:</li>
+          <ul class="options">
+              <li>Option 1: Chic boutiques and cafes in Nakameguro, Daikanyama, and Ebisu</li>
+              <li>Option 2: Upscale art & architecture in Aoyama, Omotesando, Azabudai Hills, and art museums</li>
+              <li>Option 3: Day trip to Hakone & Mt. Fuji</li>
+          </ul>
+      </ul>
+  </div>
+
+    <!-- section for hotels -->
+    <div class="container text-center mt-4" id="hotels">
+      <h1 style="color: rgb(0, 0, 0);">Featured Hotels</h1><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="imgs/amantokyo.webp"
+              class="card-img-top" alt="Aman Tokyo">
+            <div class="card-body">
+              <h5 class="card-title">Aman Tokyo</h5>
+              <p class="card-text">A modern luxury hotel soaring above Tokyo, Aman Tokyo blends urban elegance with traditional Japanese design. Its stunning views and serene atmosphere provide an oasis of calm in the bustling city. A perfect retreat for those seeking sophistication and tranquility.</p>
+              <a href="https://www.aman.com/hotels/aman-tokyo" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/fourseasonshotel.webp"
+              class="card-img-top" alt="Four Seasons Hotel">
+            <div class="card-body">
+              <h5 class="card-title">Four Seasons Hotel</h5>
+              <p class="card-text">The Four Seasons Hotel Japan combines contemporary luxury with traditional Japanese beauty, offering elegant rooms, impeccable service, and lush gardens. Located in Tokyo, it provides a peaceful escape in the heart of the city, blending modern comfort with cultural charm.</p>
+              <a href="https://www.fourseasons.com/tokyo/" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="imgs/asaba.webp"
+              class="card-img-top" alt="Asaba Ryokan">
+            <div class="card-body">
+              <h5 class="card-title">Asaba Ryokan</h5>
+              <p class="card-text">Asaba Ryokan, a centuries-old inn in Shuzenji, offers a tranquil retreat surrounded by bamboo groves and hot springs. Guests enjoy serene tatami rooms and stunning natural views, making this traditional ryokan a perfect blend of relaxation and Japanese hospitality.</p>
+              <a href="https://www.asaba-ryokan.com/" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section for restaurants -->
+    <div class="container text-center mt-4" id="restaurants">
+      <h1 style="color: rgb(0, 0, 0);">Top Restaurants</h1><br>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/ichiranramen.jpg"
+              class="card-img-top" alt="Ichiran Ramen">
+            <div class="card-body">
+              <h5 class="card-title">Ichiran Ramen</h5>
+              <p class="card-text">Ichiran Ramen is famous for its rich tonkotsu broth and unique solo dining booths, allowing guests to fully focus on the flavor. Known for customizable ramen bowls, it delivers an intimate and delicious experience for ramen lovers seeking a personal touch.</p>
+              <a href="https://en.ichiran.com/ramen/" target="_blank" class="btn btn-primary">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="imgs/kurasushi.jpg"
+              class="card-img-top" alt="Kura Sushi">
+            <div class="card-body">
+              <h5 class="card-title">Kura Sushi</h5>
+              <p class="card-text">
+                Kura Sushi is a hidden gem in Tokyo’s sushi scene, offering exquisite cuts of fresh fish crafted with precision. With a focus on top-grade ingredients and a quiet, intimate setting, it provides a refined sushi experience, capturing the essence of Japanese cuisine.</p>
+              <a href="https://www.kurasushi.co.jp/en/" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="imgs/yakiniku.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Yakiniku Inoue Ginza</h5>
+              <p class="card-text">Yakiniku Inoue Ginza offers a premium Japanese barbecue experience, featuring the finest wagyu beef grilled to perfection. Located in the upscale Ginza district, the restaurant provides an elegant atmosphere, focusing on quality meats and a refined dining experience.
+              </p>
+              <a href="https://tabelog.com/tokyo/A1301/A130101/13285252/" target="_blank" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section for attractions -->
       <div class="container text-center mt-4">
-        <!-- attractions goes here -->
-        <section class="explore-section" id="attractions">
-          <h1 class="section-title">Go Sightseeing</h1>
-          <p class="section-para">_____</p>
+        <section class="explore-section" id="sightseeing">
+          <h1 class="section-title" style="color: black;">Go Sightseeing</h1>
 
-        <div class="tours-container"></div>
+          <!-- grid -->
+
+          <div class="tours-container">
             <div class="tour-card">
               <img
-                src="https://media.cnn.com/api/v1/images/stellar/prod/180719144337-beautiful-taiwan-anping-green-tunnel-z-new-popu1965.jpg?q=w_1600,h_900,x_0,y_0,c_fill/h_618"
+                src="imgs/motonosumishrine.webp"
                 class="tour-img" alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Taijiang National Park</h3>
-                <p class="tour-action"><a href="https://en.wikipedia.org/wiki/Taijiang_National_Park" target="_blank"
+                <h3 class="tour-name">Motonosumi Shrine</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/destinations/motonosumi-shrine/" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
 
             <div class="tour-card">
               <img
-                src="https://i0.wp.com/nomadicfare.com/wp-content/uploads/2017/08/NomadicFare_ZhuiluOldTrail01.jpg?resize=1200%2C1799&ssl=1"
+                src="imgs/fuji.webp"
                 class="tour-img" alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Taroko National Park</h3>
-                <p class="tour-action"><a href="https://en.wikipedia.org/wiki/Taroko_National_Park" target="_blank"
+                <h3 class="tour-name">Mount Fuji</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/e/e2172.html" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
 
             <div class="tour-card">
-              <img src="https://www.islandlifetaiwan.com/wp-content/uploads/2017/09/Lao-Mei-Taiwan.jpg" class="tour-img"
+              <img src="imgs/narai.webp" class="tour-img"
                 alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Laomei Green Reef</h3>
-                <p class="tour-action"><a href="https://hoponworld.com/laomei-green-reef/" target="_blank"
+                <h3 class="tour-name">Narai</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/e/e6080.html" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
 
             <div class="tour-card">
               <img
-                src="https://hips.hearstapps.com/hmg-prod/images/trthrth-1635152396.jpg?crop=0.492xw:0.984xh;0,0.00327xh&resize=1200:*"
+                src="imgs/himejicastle.webp"
                 class="tour-img" alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Jade Mountain</h3>
-                <p class="tour-action"><a href="https://en.wikipedia.org/wiki/Yu_Shan" target="_blank"
+                <h3 class="tour-name">Himeji Castle</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/e/e3501.html" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
 
             <div class="tour-card">
-              <img src="https://www.remotelands.com/storage/media/4176/conversions/b130419006-banner-size.jpg"
+              <img src="imgs/kinkakujitemple.webp"
                 class="tour-img" alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Sun Moon Lake</h3>
-                <p class="tour-action"><a href="https://en.wikipedia.org/wiki/Sun_Moon_Lake" target="_blank"
+                <h3 class="tour-name">Kinkakuji Temple</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/e/e3908.html" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
 
             <div class="tour-card">
               <img
-                src="https://filmtaichung.org.tw/uploads/scenes/%E6%B5%B7%E9%82%8A%E6%B8%AF%E5%8F%A3%E6%BA%AA/%E9%AB%98%E7%BE%8E%E6%BF%95%E5%9C%B0/%E9%AB%98%E7%BE%8E%E6%BF%95%E5%9C%B0.jpg"
+                src="imgs/oirasegorge.webp"
                 class="tour-img" alt="tour-image">
               <div class="tour-body">
-                <h3 class="tour-name">Gaomei Wetlands</h3>
-                <p class="tour-action"><a href="https://en.wikipedia.org/wiki/Gaomei_Wetlands" target="_blank"
+                <h3 class="tour-name">Oirase Gorge</h3>
+                <p class="tour-action"><a href="https://www.japan-guide.com/e/e3775.html" target="_blank"
                     style="color: white; text-decoration: none;">View</a></p>
               </div>
             </div>
@@ -308,11 +429,31 @@
         </section>
       </div>
     </div>
-        </main>
 
-        <footer>
-            <!-- place footer here -->
-        </footer>
+    <!-- location -->
+    <section class="location" id="location" style="margin-bottom: 50px;">
+      <h1 style="color: white; text-align: center;">Location</h1><br>
+      <div style="display: flex; justify-content: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27819043.31031541!2d115.65565196994132!3d31.664521515084957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e0!3m2!1sen!2sus!4v1727072260722!5m2!1sen!2sus" width="1200" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <img src="imgs/logo (1).png" class="footer-logo" alt="logo">
+      <div class="footer-text">
+        <div class="social-links text-center">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        <p style="margin-top: 50px;">Journey to Japan</p>
+        <p>Email - 526ychang@frhsd.com</p>
+        <p>Phone - (000) 000-0000</p>
+      </div>
+    </footer>
         
         <!-- return to top arrow-->
         <div class="container">
